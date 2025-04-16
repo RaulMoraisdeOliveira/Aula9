@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">EliteCars</h1>
+        <h1>Carrinho</h1>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="lista-header">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Categorias</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <div class="container text-center">
+        <table class="table table-striped table-hover">
+            <thead>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Quantidade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="checkout" src="images/Pagani Zonda HP Barchetta.jpg" alt=""></td>
+                    <td>Pagani Zonda</td>
+                    <td>
+                        <input class="checkout form-control" type="number" value="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="checkout" src="images/Lamborghini Veneno Roadster.jpg" alt=""></td>
+                    <td>Lamborghini Veneno</td>
+                    <td>
+                        <input class="checkout form-control" type="number" value="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="checkout" src="images/Rolls-Royce Sweptail.jpg" alt=""></td>
+                    <td>Rolls-Royce Sweptail</td>
+                    <td>
+                        <input class="checkout form-control" type="number" value="4">
+                    </td>
+                </tr>   
+            </tbody>
+          </table>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>ENTREGA</h1>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">RUA</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nº</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">BAIRRO</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">CIDADE</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">UF</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Salvar para próximas compras</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+          </div>
+          <div class="col">
+            <h1>CARTÃO</h1>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">NOME DO TITULAR</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">NÚMERO DO CARTÃO</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">DATA DE VENCIMENTO</label>
+                  <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">CVV</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">PARCELAS</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">APELIDO CARTÃO</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Salvar para próximas compras</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Elite Cars - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
